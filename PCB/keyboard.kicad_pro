@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 4.0,
-          "height": 4.0,
-          "width": 4.0
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -58,7 +58,7 @@
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "ignore",
+        "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
@@ -90,13 +90,13 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "ignore",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "ignore",
+        "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "hackboard.kicad_pro",
+    "filename": "keyboard.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -466,10 +466,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "hackboard-gerbers/",
-      "pos_files": "",
+      "plot": "",
+      "pos_files": "../",
       "specctra_dsn": "",
-      "step": "../stl/PCB.step",
+      "step": "../CAD/PCB.step",
       "svg": "",
       "vrml": ""
     },
@@ -532,6 +532,12 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
           "show": false
         },
         {
@@ -608,7 +614,7 @@
   },
   "sheets": [
     [
-      "35a2c0be-7cb0-4929-b87d-3df7c0e7b2b8",
+      "35f0dcd5-aa43-4a71-97e3-af3ab4af3d2e",
       "Root"
     ]
   ],
